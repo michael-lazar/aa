@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TwitAA 2012-02-08 02:56:36</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+<body>
+TwitAA 2012-02-08 02:56:36
+
+[TwitAA 2012-02-08 02:56:36]
+mergeSort :: (Ord a) =&gt; [a] -&gt; [a]
+mergeSort xs = ms (length xs) xs
+  where
+    ms _ []  = []
+    ms _ [x] = [x]
+    ms n xs  = merge (ms m as) (ms (n - m) bs)
+      where
+        m = div n 2
+        (as, bs) = splitAt m xs
+    merge xs [] = xs
+    merge [] ys = ys
+    merge xs@(x : xs&#x27;) ys@(y : ys&#x27;)
+      | x &lt;= y    = x : merge xs&#x27; ys
+      | otherwise = y : merge xs ys&#x27;
+</body>
+</html>

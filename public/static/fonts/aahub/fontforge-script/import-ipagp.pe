@@ -1,0 +1,26 @@
+#!/usr/bin/fontforge
+
+Open("../ipagp00303/ipagp.ttf")
+Select(19968,40864)
+ScaleToEm(1024)
+Copy()
+
+Open("../monafont-ttf-2.90/mona.ttf")
+Select(19968,40864)
+Paste()
+
+# use "\" for backslash
+Select(165)
+Copy()
+Select(92)
+Paste()
+
+SetFontNames("Monapo","Monapo","Monapo")
+SetTTFName(0x409,1,"Monapo")
+SetTTFName(0x409,3,"Monapo")
+SetTTFName(0x409,4,"Monapo")
+SetTTFName(0x411,1,"Monapo")
+SetTTFName(0x411,3,"Monapo")
+SetTTFName(0x411,4,"Monapo")
+
+Generate("./monapo.ttf")

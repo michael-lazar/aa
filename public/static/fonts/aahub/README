@@ -1,0 +1,14 @@
+https://fonts.aahub.org/
+
+AAHub font
+
+Most Japanese websites were designed for "MS P Gothic" font.
+"AAHub" font is a combined font that uses monapo.ttf.
+It has almost same width as MS P Gothic,
+so it can show Japanese Ascii Art properly.
+
+
+For developers:
+You can generate this font by fontforge.
+$ cd fontforge-script/
+$ ./import-ipagp.pe

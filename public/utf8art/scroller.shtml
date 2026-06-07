@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>shift_jis | Shift_JIS Infinite Scroller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/site.css">
+</head>
+<body>
+  <div id="header">
+    <a href="/">くコ:彡</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Shift_JIS Infinite Scroller
+    <div id="filters">
+      <div id="directorySelector">
+        <label for="subdirectory">Category</label>
+        <select id="subdirectory" name="subdirectory">
+          <option value="2ch">Category: 2ch</option>
+          <option value="aa">Category: aa</option>
+          <option value="anime">Category: anime</option>
+          <option value="around140">Category: around140</option>
+          <option value="asciiart">Category: asciiart</option>
+          <option value="chaos">Category: chaos</option>
+          <option value="pedobear">Category: pedobear</option>
+          <option value="story">Category: story</option>
+          <option value="yaruo">Category: yaruo</option>
+        </select>
+      </div>
+      <div id="orderSelector">
+        <label for="order">Sort</label>
+        <select id="order" name="order">
+          <option value="name">Sort: A-Z</option>
+          <option value="namereverse">Sort: Z-A</option>
+          <option value="random">Sort: Random</option>
+        </select>
+      </div>
+      <label for=pattern>Search</label>
+      <input id="pattern" placeholder="filename..." width="10">
+      <button id="refreshButton">(╯°□°）╯Go!</button>
+    </div>
+  </div>
+  <div id="body">
+    <noscript>(requires javascript)</noscript>
+    <div id="content"></div>
+    <div id="loadingPlaceholder">Loading<span id="loadingDots"></span></div>
+  </div>
+  <script src="../static/js/scroller.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'AAHub';
+    src: url('../fonts/aahub/aahub.woff2') format('woff2');
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+label {
+    display: none;
+}
+button {
+    white-space: nowrap;
+}
+select, input, button {
+    height: 20px;
+    padding: 0 3px;
+    border: 1px solid;
+    box-sizing: border-box;
+    background-color: white; /* Sets the background color to white */
+    color: black; /* Sets the text color to black */
+    border-radius: 0; /* Removes any default border-radius */
+}
+#content  {
+    font-family: 'AAHub', sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    white-space: pre;
+    margin-top: 5px;
+}
+#loadingPlaceholder {
+    display: none;
+}
+#header {
+    position: sticky;
+    top: 0;
+    background: cornflowerblue;
+    color: white;
+    padding: 3px 10px;
+    width: 100%;
+    align-items: center;
+}
+#header a {
+    text-decoration: none;
+    color: white;
+}
+#filters {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#body {
+    margin: 10px;
+}
+#pattern {
+    width: 15ch;
+}

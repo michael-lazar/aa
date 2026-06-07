@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TwitAA 2012-02-03 17:55:34</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+<body>
+TwitAA 2012-02-03 17:55:34
+
+[TwitAA 2012-02-03 17:55:34]
+(1)
+SELECT * FROM Goods
+  WHERE color IN(&#x27;red&#x27;, &#x27;yellow&#x27;, &#x27;blue&#x27;)
+          AND price BETWEEN 100 AND 300
+
+(2)
+SELECT * FROM Goods
+  WHERE NOT color IS NULL AND NOT color=&quot;&quot; AND price&gt;100
+
+(3)
+SELECT sname, sum(qty) FROM Supplier su, Stock st
+  WHERE su.sno=st.sno
+  GROUP BY su.sno
+  HAVING sum(qty)&gt;=5
+
+(4)
+SELECT g.gno, gname, sum(qty) FROM Goods g, Stock s
+  WHERE g.gno=s.gno
+  GROUP BY g.gno
+  ORDER BY sum(qty) DESC
+
+(5)
+SELECT g.gno, gname, sum(qty)*price FROM Goods g, Stock s
+  WHERE g.gno=s.gno
+  GROUP BY g.gno
+  HAVING sum(qyt)*price&gt;=500
+  ORDER BY sum(qty)*price DESC
+</body>
+</html>

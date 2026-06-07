@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>shift_jis | <!--#echo var='REQUEST_URI' --></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div id="header">
+  <a href="/">くコ:彡</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;shift_jis&nbsp;@&nbsp;aa.mozz.us
+</div>
+<div id="body">
+  <h2>Index: <!--#echo var='REQUEST_URI' --></h2>
